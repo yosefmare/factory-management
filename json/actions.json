@@ -1,0 +1,34 @@
+{
+    "actins": [
+        {
+            "id": 1,
+            "maxActions": 5,
+            "date": "1/03/2024",
+            "actionAllowed": 3
+        },
+        {
+            "id": 1,
+            "maxActions": 5,
+            "date": "1/03/2024",
+            "actionAllowed": 2
+        },
+        {
+            "id": 1,
+            "maxActions": 5,
+            "date": "2/03/2024",
+            "actionAllowed": 4
+        },
+        {
+            "id": 2,
+            "maxActions": 7,
+            "date": "2/03/2024",
+            "actionAllowed": 6
+        },
+        {
+            "id": 2,
+            "maxActions": 5,
+            "date": "2/03/2024",
+            "actionAllowed": 5
+        }
+    ]
+}
