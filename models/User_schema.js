@@ -4,6 +4,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         
     },
+    externalId: Number,
     numberOfActions: Number
 
 }, { versionKey: false })

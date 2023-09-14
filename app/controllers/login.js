@@ -1,5 +1,8 @@
 const router = require('express').Router()
 const userData = require('../../DAL/placeholder_service')
+const usersChecker = require('./add_user_to_db')
+const UsersModel = require('../../models/User_schema')
+
 
 class Login {
     constructor() {
@@ -11,15 +14,15 @@ class Login {
         try {
             const reqData = req.body
             const userlognData = await userData()
-            const user = userlognData.find((data) => {
-                return reqData.username === data.username &&
-                    reqData.email === data.email
-            })
+            const user = userlognData.find((data) =>
+                reqData.username === data.username &&
+                reqData.email === data.email
+            )
 
             if (user) {
-                return res.status(200).json({ massage: "login successfully" })
+                usersChecker(user)
+                return res.status(200).json( user)
             } else {
-                console.log(user);
                 return res.status(404).json({ massage: "user not found" })
             }
 
