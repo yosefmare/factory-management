@@ -16,6 +16,7 @@ const usersChecker = async (data) => {
     if (!userExists) {
         await UsersModel.create({
             fullName: data.name,
+            externalId: data.id,
             numberOfActions: 0,
         });
     }
