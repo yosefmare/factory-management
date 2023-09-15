@@ -1,7 +1,6 @@
 const router = require('express').Router()
 const userData = require('../../DAL/placeholder_service')
 const usersChecker = require('./add_user_to_db')
-const UsersModel = require('../../models/User_schema')
 
 
 class Login {
