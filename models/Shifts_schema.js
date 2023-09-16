@@ -1,19 +1,21 @@
-// shiftSchema.js
 const mongoose = require('mongoose');
 
 const shiftSchema = new mongoose.Schema({
     date: {
         type: Date,
-        required: [true, 'Please enter the date and time of the shift'],
+        default: () => {
+            const currentDate = new Date();
+            return currentDate;
+        },
     },
-    startingHour: {
-        type: Number,
-        required: [true, 'Please enter the starting hour of the shift'],
-    },
-    endingHour: {
-        type: Number,
-        required: [true, 'Please enter the ending hour of the shift'],
-    },
+    startingHour: Number,
+    endingHour: Number,
+    employees: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'employees',
+        },
+    ]
 }, { versionKey: false });
 
 const ShiftModel = mongoose.model("shifts", shiftSchema)
