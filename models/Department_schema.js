@@ -3,11 +3,11 @@ const departmentSchema = new mongoose.Schema({
     name: String,
     manager: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Employees',
+        ref: 'employees',
     },
     departmentWorkers: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'users',
+        ref: 'employees',
     }],
 }, {versionKey: false});
 
