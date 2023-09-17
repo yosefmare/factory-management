@@ -1,0 +1,16 @@
+{
+  "actins": [
+    {
+      "id": 10,
+      "maxActions": 6,
+      "date": "17/9/2023",
+      "actionAllowed": 4
+    },
+    {
+      "id": 10,
+      "maxActions": 6,
+      "date": "17/9/2023",
+      "actionAllowed": 6
+    }
+  ]
+}
