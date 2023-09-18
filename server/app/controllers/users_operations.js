@@ -6,6 +6,7 @@ class Users {
     constructor() {
         this.router = router
         router.get('/users', this.getUsers)
+        router.get('/users/:id', this.getUserById)
         router.put('/users/:id', this.update)
     }
 
@@ -19,6 +20,19 @@ class Users {
         }
     }
     
+    async getUserById(req, res) {
+        const { id } = req.params;
+        
+        try {
+            const user = await UsersModel.findById(id);
+            
+            res.status(200).json(user);
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({ message: "fetching failed" });
+        }
+    }
+
     async update(req, res) {
         const { id } = req.params;
         const data = req.body;
