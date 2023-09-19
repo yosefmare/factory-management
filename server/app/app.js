@@ -26,6 +26,6 @@ app.use('/', employees.router)
 app.use('/', departments.router)
 app.use('/', shifts.router)
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`server running on port: ${process.env.PORT}`);
 })
