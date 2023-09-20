@@ -1,4 +1,3 @@
-const { write } = require('@popperjs/core')
 const dbUsers = require('../../DAL/get_users_from_db')
 const jf  = require('jsonfile')
 
