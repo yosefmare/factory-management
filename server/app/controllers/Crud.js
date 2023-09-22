@@ -1,8 +1,3 @@
-const router = require('express').Router()
-const Employees = require('../../models/Employee_scheme')
-const Departments = require('../../models/Department_schema')
-const Shifts = require('../../models/Shifts_schema')
-
 class Crud {
     constructor(model) {
         this.model = model
@@ -35,7 +30,7 @@ class Crud {
 
 
     async getById(req, res) {
-        
+
         const { id } = req.params;
         try {
             let query = this.model.findById(id);
@@ -96,7 +91,7 @@ class Crud {
         const { id } = req.params;
 
         try {
-           const data =  await this.model.findByIdAndDelete(id)
+            const data = await this.model.findByIdAndDelete(id)
 
             if (!data) {
                 return res.status(404).json({ message: "data not found" });
