@@ -7,12 +7,16 @@ class Crud {
         try {
             let query = this.model.find();
 
-            if (this.model.modelName === 'departments') {
-                query = query.populate("manager departmentWorkers");
-            } else if (this.model.modelName === 'employees') {
-                query = query.populate("departmentsID shiftsID");
-            } else if (this.model.modelName === 'shifts') {
-                query = query.populate("employees");
+            switch (this.model.modelName) {
+                case 'departments':
+                    query = query.populate("manager departmentWorkers");
+                    break;
+                case 'employees':
+                    query = query.populate("departmentsID shiftsID");
+                    break;
+                case 'shifts':
+                    query = query.populate("employees");
+                    break;
             }
 
             const data = await query.exec();
@@ -32,15 +36,16 @@ class Crud {
         try {
             let query = this.model.findById(id);
 
-            if (this.model.modelName === 'departments') {
-                query = query.populate("manager departmentWorkers");
-
-            } else if (this.model.modelName === 'employees') {
-                query = query.populate("departmentsID shiftsID");
-
-            } else if (this.model.modelName === 'shifts') {
-                query = query.populate("employees");
-
+            switch (this.model.modelName) {
+                case 'departments':
+                    query = query.populate("manager departmentWorkers");
+                    break;
+                case 'employees':
+                    query = query.populate("departmentsID shiftsID");
+                    break;
+                case 'shifts':
+                    query = query.populate("employees");
+                    break;
             }
 
             const data = await query.exec();
