@@ -8,9 +8,12 @@ class Crud {
             let query = this.model.find();
 
             if (this.model.modelName === 'departments') {
-                query = query.populate("manager departmentWorkers");            } else if (this.model.modelName === 'employees') {
-                query = query.populate("departmentsID shiftsID");            } else if (this.model.modelName === 'shifts') {
-                query = query.populate("employees");            }
+                query = query.populate("manager departmentWorkers");
+            } else if (this.model.modelName === 'employees') {
+                query = query.populate("departmentsID shiftsID");
+            } else if (this.model.modelName === 'shifts') {
+                query = query.populate("employees");
+            }
 
             const data = await query.exec();
 
