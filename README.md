@@ -17,24 +17,30 @@ This is a Factory Management System that allows you to manage your factory opera
 
 ## Getting Started
 
-1. Clone the repository:
+1. install the packages by run
+
+```bash
+npm i
+```
+
+3. Clone the repository:
 
 ``` bash
    git clone <https://github.com/yosefmare/factory-management.git>`
 ```
 
-   2. Install nodemon globally (if not already installed)
+   3. Install nodemon globally (if not already installed)
 
  ``` bash
    npm install -g nodemon
    ```
 
-   3. Start the server by run
+   4. Start the server by run
 ``` bash
    npm start
    ```
 
-   4. Access the application at http://localhost:3000
+   5. Access the application at http://localhost:3000
 
    ## Features
     - User authentication using JSON Placeholder credentials.
