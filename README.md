@@ -19,10 +19,11 @@ This is a Factory Management System that allows you to manage your factory opera
 1. Install dependencies:
 npm install
 2. nstall nodemon globally (if not already installed):
+   ```bash
   npm install -g nodemon
-3. Start the server with nodemon:
+4. Start the server with nodemon:
 npm start
-4. Access the application at http://localhost:3000.
+5. Access the application at http://localhost:3000.
 Features
 User authentication using JSON Placeholder credentials.
  manage employees, shifts, depatmens
