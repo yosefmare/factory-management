@@ -2,10 +2,9 @@
 
 This is a Factory Management System that allows you to manage your factory operations efficiently. Users can log in using their credentials from the JSON Placeholder website you can use the user name end email from this link: https://jsonplaceholder.typicode.com/users . Once logged in, users can perform various operations, such as adding employees, managing shifts, and more.
 
-<<<<<<< HEAD
-=======
 
->>>>>>> c228e63f928a3558d466bc2df3f8e9cbd935ce92
+
+
 ## Technologies Used
 
 - Mongoose
@@ -16,7 +15,7 @@ This is a Factory Management System that allows you to manage your factory opera
 - cors
 - dotenv
 
-<<<<<<< HEAD
+
 ## Getting Started
 
 1. Clone the repository:
@@ -26,8 +25,9 @@ This is a Factory Management System that allows you to manage your factory opera
    `npm install -g nodemon`
 
    3. Start the server by run
-   `npm start`
-=======
+  ```bash
+npm start
+```
 
 
 ## Getting Started
@@ -58,10 +58,5 @@ This is a Factory Management System that allows you to manage your factory opera
     - when yo log in with user name and email automatically new user be added in the DB
     - tou can't delete users or shifts
     - when you send a put request to update num of actions for the user automatically his information be written in the actions.json file
-
-
-
-<<<<<<< HEAD
-=======
 
 >>>>>>> c228e63f928a3558d466bc2df3f8e9cbd935ce92
