@@ -17,16 +17,16 @@ This is a Factory Management System that allows you to manage your factory opera
 
 ## Getting Started
 
-1. install the packages by run
-
-```bash
-npm i
-```
-
-3. Clone the repository:
+1. Clone the repository:
 
 ``` bash
    git clone <https://github.com/yosefmare/factory-management.git>`
+```
+
+2. install the packages by run
+
+```bash
+npm i
 ```
 
    3. Install nodemon globally (if not already installed)
