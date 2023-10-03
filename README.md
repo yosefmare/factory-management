@@ -15,21 +15,6 @@ This is a Factory Management System that allows you to manage your factory opera
 - cors
 - dotenv
 
-
-## Getting Started
-
-1. Clone the repository:
-   `git clone <https://github.com/yosefmare/factory-management.git>`
-
-   2. Install nodemon globally (if not already installed)
-   `npm install -g nodemon`
-
-   3. Start the server by run
-  ```bash
-npm start
-```
-
-
 ## Getting Started
 
 1. Clone the repository:
@@ -40,15 +25,14 @@ npm start
 
    2. Install nodemon globally (if not already installed)
 
-   ``` bash
+ ``` bash
    npm install -g nodemon
    ```
 
    3. Start the server by run
-   ``` bash
+``` bash
    npm start
    ```
->>>>>>> c228e63f928a3558d466bc2df3f8e9cbd935ce92
 
    4. Access the application at http://localhost:3000
 
@@ -59,4 +43,4 @@ npm start
     - tou can't delete users or shifts
     - when you send a put request to update num of actions for the user automatically his information be written in the actions.json file
 
->>>>>>> c228e63f928a3558d466bc2df3f8e9cbd935ce92
+
