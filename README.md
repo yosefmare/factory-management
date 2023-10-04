@@ -21,7 +21,7 @@ Use Postman to send the requests or any other API client GUI
 1. Clone the repository:
 
 ``` bash
-   git clone <https://github.com/yosefmare/factory-management.git>`
+   git clone https://github.com/yosefmare/factory-management.git
 ```
 
 2. install the packages by run
