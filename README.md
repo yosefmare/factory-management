@@ -1,6 +1,7 @@
 # Factory Management System
 
 This is a Factory Management System that allows you to manage your factory operations efficiently. Users can log in using their credentials from the JSON Placeholder website you can use the user name end email from this link: https://jsonplaceholder.typicode.com/users . Once logged in, users can perform various operations, such as adding employees, managing shifts, and more.
+Use Postman to send the requests or any other API client GUI
 
 
 
@@ -45,8 +46,8 @@ npm i
    ## Features
     - User authentication using JSON Placeholder credentials.
     - Add and manage (you can do all the crud operations) on employees, shifts, departments
-    - when yo log in with user name and email automatically new user be added in the DB
-    - tou can't delete users or shifts
+    - when you log in with user name and email automatically new user be added in the DB
+    - you can't delete users or shifts
     - when you send a put request to update num of actions for the user automatically his information be written in the actions.json file
 
 
